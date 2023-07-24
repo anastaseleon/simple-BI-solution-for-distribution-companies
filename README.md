@@ -1,51 +1,41 @@
 # Business Intelligence and Machine Learning for a Small Transport Company
-## The dataset
-EfficientRide Logistics is a fake regional transportation service provider, specializing in diverse delivery needs in and around a bustling port city. Operating within a tight-knit network of various strategic locations, the company has established a robust logistics framework that includes customer distribution centers, retail stores, and carrier warehouses.
 
-The dataset reflects the operations of EfficientRide Logistics and includes the following key components:
+## The Dataset
+The dataset used in this project originates from EfficientRide Logistics, a hypothetical regional transportation service provider specializing in a diverse array of delivery needs in and around a bustling port city. The company operates within a strategic network encompassing customer distribution centers, retail stores, and carrier warehouses, thus establishing a robust logistics framework.
+The dataset contains comprehensive information about the company's orders, drivers, trailers, schedules, locations, and various events that affect orders. This data provides a detailed perspective of EfficientRide's logistics operations, enabling in-depth analysis and potential optimization of their operations.
 
-1. **Orders:** Each entry in the dataset represents an individual order. Key information recorded for each order includes the order ID, pickup date, lead time, and volume. The status of each order is also tracked, indicating whether it has been delivered, is on the way, or is yet to be picked up.
+[Description of the dataset](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/a7bc34710d6630b4935095d5c83fa9274d6a000a/Description%20of%20the%20dataset%20.md)
 
-2. **Delivery:** Additional details related to the delivery are included, such as the type of delivery (direct or not direct), delivery date, pickup address, and delivery location. The type of trailer required for each order is also recorded.
+## Project Objective
+This project seeks to illustrate how a small transport company, without a pre-existing ERP system, can utilize modern data gathering techniques, business intelligence, and machine learning to improve operational efficiency and inform strategic decision-making.
 
-3. **Equipment and Drivers:** Each order is associated with specific equipment and a driver. The dataset includes a unique ID for each piece of equipment and each driver, allowing for efficient tracking and management.
+## Project Components
 
-4. **Events, Cost, and Profit:** The dataset also includes an 'Event' column, which records any issues that occurred during the delivery process. Associated with this, the cost incurred for each order and the profit generated is also tracked.
+### Business Intelligence and Reporting
+Initially, we will use Power BI to portray a broad picture of the company, offering a basic understanding of their resources and demand.
 
-5. **Location Data:** The dataset includes detailed location data, with the latitude and longitude for each location type, which includes Ports, Customer DC, Customer Stores, and Carrier Warehouses.
+[The Power Bi file](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/a7bc34710d6630b4935095d5c83fa9274d6a000a/EfficientRide_logistics.pbix)
 
-6. **Driver Information:** Detailed information about each driver is included, such as their hire date and the type of license they hold.
+![Report created with Power BI](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/Presentation%20of%20the%20company.png?raw=true)
 
-The dataset effectively reflects the intricacies of EfficientRide Logistics' operations, providing a comprehensive view of the order process, from pickup to delivery. It demonstrates the company's meticulous approach to recording data, highlighting its commitment to operational efficiency and customer service.## Objective
+Subsequently, by employing SQL, we'll ask a series of business-related questions to understand the company's fundamental components. This exploration can lead to the creation of views that can be represented in Power BI or Tableau.
 
-This project aims to demonstrate how a small transport company, without a pre-existing ERP system, can leverage modern data gathering techniques, business intelligence, and machine learning to improve operational efficiency and inform strategic decision-making.
-
-## Content
-I will progressively work oon the following:
-
-
-### Paint a picture of the supply chain ( Business Intelligence and Reporting)
-
-Use SQL to extract insights from the data and Power BI to visualize these insights. The reports can include:
-- Key Performance Indicators (KPIs) such as order fulfillment rate, lead time, cost efficiency, etc.
-- Driver performance metrics.
-- Impact of different events (delays, damages, cancellations, etc.) on operations, costs, and customer satisfaction.
-  
-### Data Gathering
-
-- **Voice-to-Text for Order Status Updates:** Implement a voice-to-text system that drivers can use to verbally update the status of orders. This system can be developed using speech recognition APIs like Google Speech-to-Text.
-
-- **License Plate Recognition to Update Yard List:** Use computer vision techniques to automatically recognize and track license plates of vehicles in the yard. This can be achieved using machine learning libraries like OpenCV or services like Amazon Rekognition.
 ### Sales Forecasting
+We'll utilize machine learning algorithms to forecast future sales based on historical data. The forecasting model can assist in planning and optimizing supply chain operations.
 
-Use machine learning algorithms to forecast future sales based on historical data. The forecasting model can help in planning and optimizing the supply chain operations.
-
+ [Will be posted on July 31st]
 ### Risk Assessment
+We'll apply machine learning techniques to identify potential risks such as delays, damages, or cancellations. The risk assessment model can facilitate proactive decision-making and risk mitigation.
 
-Use machine learning to identify potential risks such as delays, damages, or cancellations. The risk assessment model can aid proactive decision-making and risk mitigation.
+ [Will be posted on August 7th]
+
+### Data Gathering
+Lastly, we will explore options for more efficient data gathering:
+- **Voice-to-Text for Order Status Updates:** Implement a voice-to-text system that drivers can use to verbally update the status of orders. This system can be developed using speech recognition APIs like Google Speech-to-Text.
+- **License Plate Recognition to Update Yard List:** Use computer vision techniques to automatically recognize and track license plates of vehicles in the yard. This can be achieved using machine learning libraries like OpenCV or services like Amazon Rekognition.
+ [Will be posted on August 14th]
 
 ## Tools to be Used
-
 - SQL for data extraction
 - Python libraries for data manipulation and machine learning (pandas, OpenCV, Google Speech-to-Text, scikit-learn)
 - Power BI for data visualization
