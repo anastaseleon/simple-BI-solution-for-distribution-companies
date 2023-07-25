@@ -20,6 +20,7 @@ Initially, we will use Power BI to portray a broad picture of the company, offer
 
 ![Report created with Power BI](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/Presentation%20of%20the%20company.png?raw=true)
 
+
 ![Looking at the sales](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/4a02c62bd186ddc36e3dd3cf06f5e01e5dbb7882/sales%20report.png)
 
 Subsequently, by employing SQL, we'll ask a series of business-related questions to understand the company's fundamental components. This exploration can lead to the creation of views that can be represented in Power BI or Tableau.
