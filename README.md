@@ -4,7 +4,9 @@
 The dataset used in this project originates from EfficientRide Logistics, a hypothetical regional transportation service provider specializing in a diverse array of delivery needs in and around a bustling port city. The company operates within a strategic network encompassing customer distribution centers, retail stores, and carrier warehouses, thus establishing a robust logistics framework.
 The dataset contains comprehensive information about the company's orders, drivers, trailers, schedules, locations, and various events that affect orders. This data provides a detailed perspective of EfficientRide's logistics operations, enabling in-depth analysis and potential optimization of their operations.
 
-[Description of the dataset](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/a7bc34710d6630b4935095d5c83fa9274d6a000a/Description%20of%20the%20dataset%20.md)
+[Description of the company](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/a7bc34710d6630b4935095d5c83fa9274d6a000a/Description%20of%20the%20dataset%20.md)
+
+
 
 ## Project Objective
 This project seeks to illustrate how a small transport company, without a pre-existing ERP system, can utilize modern data gathering techniques, business intelligence, and machine learning to improve operational efficiency and inform strategic decision-making.
@@ -17,6 +19,8 @@ Initially, we will use Power BI to portray a broad picture of the company, offer
 [The Power Bi file](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/a7bc34710d6630b4935095d5c83fa9274d6a000a/EfficientRide_logistics.pbix)
 
 ![Report created with Power BI](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/Presentation%20of%20the%20company.png?raw=true)
+
+![Looking at the sales](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/4a02c62bd186ddc36e3dd3cf06f5e01e5dbb7882/sales%20report.png)
 
 Subsequently, by employing SQL, we'll ask a series of business-related questions to understand the company's fundamental components. This exploration can lead to the creation of views that can be represented in Power BI or Tableau.
 
