@@ -11,14 +11,11 @@ This project seeks to illustrate how a small transport company, without a pre-ex
 ## Project Components
 
 ### Business Intelligence and Reporting
+link to queries and dax formulas
 
-##### Use Of SQL
-(the likn to the the Queries)
-
-##### Use Of Power BI
-(All the Measures and Table, Connections and Power Queries)
 
 Initially, we can use SQL to get a better idea of the dataset and Power BI to portray a broad picture of the company, offering a basic understanding of their resources and demand.
+
 
 Subsequently, by employing SQL, we'll ask a series of business-related questions to understand the company's fundamental components. This exploration can lead to the creation of views that can be represented in Power BI or Tableau. We also aim to assess the impact of operations on customer satisfaction and formulate strategies to improve it.
 
