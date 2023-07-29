@@ -1,4 +1,4 @@
-Read# Measure Phase
+# Measure Phase
 
 In this phase of the project, we aim to gather and measure the data from various sources. This data provides a quantitative basis for our analysis and helps us understand the current state of business operations.
 
