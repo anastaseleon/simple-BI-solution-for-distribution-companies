@@ -37,19 +37,22 @@ Let's dive deeper into each of these steps.
 The data extraction process involves pulling all the necessary data from the different sources.  The goal is to extract all the relevant information that can help in answering the business-related questions and aid in the exploration of the company's fundamental components.
 
 Here are the tables we will be working with:
+<table>
+<tr>
+<td>
 
-1. **Locations**
+- **Locations**
     - Location Name
     - Location Type
     - Location Latitude
     - Location Longitude
 
-2. **Trailers Pool**
+- **Trailers Pool**
     - Equipment ID
     - Equipment Type
     - Capacity
 
-3. **Orders**
+- **Orders**
     - Order ID
     - Pickup Date
     - Lead Time
@@ -69,7 +72,10 @@ Here are the tables we will be working with:
     - Cost
     - Revenue
 
-4. **Drivers**
+</td>
+<td>
+
+- **Drivers**
     - Driver ID
     - Driver Name
     - Hired Date
@@ -77,7 +83,7 @@ Here are the tables we will be working with:
     - Seniority
     - Vacation Days
 
-5. **Schedule**
+- **Schedule**
     - Date
     - Driver ID
     - Equipment ID
@@ -85,18 +91,25 @@ Here are the tables we will be working with:
     - License Type
     - Equipment Type
 
-6. **Vacations**
+</td>
+<td>
+
+- **Vacations**
     - Driver ID
     - Start Date
     - End Date
 
-7. **Unavailability**
+- **Unavailability**
     - Date
     - ID (can be equipment or driver)
 
-8. **Event Description**
+- **Event Description**
     - Event ID
     - Event Description
+
+</td>
+</tr>
+</table>
 
 [Link to SQL queries for data extraction]
 
