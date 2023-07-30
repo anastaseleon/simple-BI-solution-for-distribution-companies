@@ -11,26 +11,34 @@ Next, in Data Modelling, we create a model of the data. We structure the data in
 Finally, in Data Measurement, we calculate various metrics that can provide insights into the operations of EfficientRide Logistics. These metrics include measures such as the average number of orders received each day, the number of available drivers each day, the number of unassigned drivers per day, and more.
 
 Let's dive deeper into each of these steps.
+| Department | Management Level | User Story | Related Strategy |
+|------------|------------------|------------|------------------|
+| Logistics  | Operational      | User Story 1: As a logistics manager, I want to know the average number of orders received each day so that I can manage resources effectively. | Efficiency |
+|            |                  | User Story 2: As a logistics manager, I want to know how many drivers are available each day so that I can schedule deliveries efficiently. | Efficiency |
+|            |                  | User Story 3: As a logistics manager, I want to know the average number of unassigned drivers each day so that I can identify staffing needs. | Efficiency |
+|            |                  | User Story 4: As a logistics manager, I want to know how many orders are rescheduled so that I can improve customer satisfaction. | Customer Satisfaction |
+|            |                  | User Story 5: As a logistics manager, I want to know how many orders are delivered late so that I can improve delivery processes. | Customer Satisfaction |
+|            | Strategic        | User Story 6: As a logistics director, I want to identify peak periods for orders so that I can plan for high-demand times. | Efficiency |
+|            |                  | User Story 7: As a logistics director, I want to identify drivers or equipment types associated with late deliveries so that I can address performance issues. | Efficiency, Customer Satisfaction |
+|            |                  | User Story 8: As a logistics director, I want to identify regions or customers with a high incidence of rescheduled orders so that I can improve customer service. | Customer Satisfaction |
+| Finance    | Operational      | User Story 9: As a finance officer, I want to know the cost associated with rescheduled orders so that I can manage the budget effectively. | Efficiency |
+|            |                  | User Story 10: As a finance officer, I want to know the cost associated with late deliveries so that I can control expenses. | Efficiency |
+| HR         | Operational      | User Story 11: As an HR manager, I want to know if there are enough drivers to handle the volume of orders so that I can meet staffing needs. | Efficiency |
+|            |                  | User Story 12: As an HR manager, I want to know if drivers are being evenly utilized or if some drivers are being overworked so that I can ensure fair workloads. | Efficiency |
+|            | Strategic        | User Story 13: As an HR director, I want to know if there are training needs for drivers to handle different types of equipment or orders so that I can improve driver skills. | Efficiency |
 
-| Department | Management Level | Potential Questions | Related Strategy |
-|------------|------------------|---------------------|------------------|
-| Logistics  | Operational      | How many orders are received on average each day? | Efficiency |
-|            |                  | How many drivers are available on average each day? | Efficiency |
-|            |                  | What is the average number of unassigned drivers per day? | Efficiency |
-|            |                  | How many orders are rescheduled? | Customer Satisfaction |
-|            |                  | How many orders are delivered late? | Customer Satisfaction |
-|            | Strategic        | What are the peak periods for orders? | Efficiency |
-|            |                  | Are there recurring patterns in order volume? | Efficiency |
-|            |                  | Are there certain drivers or equipment types that are associated with late deliveries? | Efficiency, Customer Satisfaction |
-|            |                  | Are there certain regions or customers that have a higher incidence of rescheduled orders? | Customer Satisfaction |
-| Finance    | Operational      | What is the cost associated with rescheduled orders? | Efficiency |
-|            |                  | What is the cost associated with late deliveries? | Efficiency |
-|            | Strategic        | Are there cost-saving opportunities in optimizing driver and equipment scheduling? | Efficiency |
-|            |                  | Can we predict future order volume for budgeting purposes? | Efficiency |
-| HR         | Operational      | Are there enough drivers to handle the volume of orders? | Efficiency |
-|            |                  | Are drivers being evenly utilized or are some drivers being overworked? | Efficiency |
-|            | Strategic        | Do we need to hire more drivers or acquire more equipment? | Efficiency |
-|            |                  | Are there training needs for drivers to handle different types of equipment or orders? | Efficiency |
+
+## Power BI Report Structure
+
+The Power BI report is organized into several dashboards to address the above user stories:
+
+1. **Overview Dashboard**: Provides high-level information such as the total number of orders, total revenue, total cost, and the average number of orders per day. 
+
+2. **Logistics Dashboard**: Contains visuals that address User Stories 1-6, and 8-9, including charts for orders received, available drivers, unassigned drivers, rescheduled and late orders, peak periods for orders, and late deliveries by driver and equipment type.
+
+3. **Finance Dashboard**: Contains visuals related to User Stories 10-11, including charts for cost associated with rescheduled orders and late deliveries.
+
+4. **Human Resources Dashboard**: Contains visuals related to User Stories 14, 15, and 17, including charts for the number of drivers, workload distribution among drivers, and drivers needing training.
 
 ## Data Extraction
 
