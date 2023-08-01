@@ -5,30 +5,9 @@ The dataset used in this project originates from EfficientRide Logistics, a hypo
 
 [Description of the company](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/a7bc34710d6630b4935095d5c83fa9274d6a000a/Description%20of%20the%20dataset%20.md)
 
-## Why am I making these projects
-I am making this portfolio to illustrate how a small or midsize transport company, without a pre-existing ERP system, can utilize modern data gathering techniques, business intelligence, and machine learning to improve operational efficiency, inform strategic decision-making, and enhance customer satisfaction.
-
-## Methodology
-Using a methodology is a good way to structure our projects. Since I use a plethora of tools and documents, I borrow methodologies from Agile and Six Sigma to structure these documents.
-
-## The DMAIC Methodology
-Our first approach follows the principles of the Six Sigma DMAIC methodology:
-
-**Define:** The first step involves defining the problem and the project objectives clearly. In this case, the problem is to improve the operational efficiency of the transport company, increase customer satisfaction, and enable data-driven decision-making. The objective is to use business intelligence, machine learning, and modern data gathering techniques to achieve these goals.
-
-**Measure:** In this step, we gather and measure the data from various sources like orders, drivers, trailers, schedules, locations, and events. This data provides a quantitative basis for our analysis and helps us understand the current state of the business operations.
-
-**Analyze:** The collected data is then analyzed using SQL for data extraction and Power BI for data visualization. We identify trends, patterns, and areas of improvement in the operations. We also use machine learning algorithms to predict future sales, identify potential risks, and forecast customer satisfaction.
-
-**Improve:** Based on the insights derived from the analysis, we suggest improvements in the existing processes and strategies. This might involve optimizing driver and equipment schedules, implementing proactive risk mitigation measures, or enhancing customer communication and real-time tracking.
-
-**Control:** In this final step, we monitor the implementation and effects of the improvements to ensure that they deliver the expected benefits. We set up control charts and other monitoring mechanisms to keep track of key performance indicators. We also continue to iterate on our models and strategies as needed, to adapt to changes in the business environment or operations.
-
-By following the Six Sigma DMAIC methodology, we ensure a systematic, data-driven approach to problem-solving and process improvement. This methodology allows us to provide EfficientRide Logistics with actionable insights and recommendations to enhance their operations and service quality.
 
 ## Establishing the Foundation: Defining the Objectives and Deliverables
 
-In the Define phase, we establish the goals of the project in relation to the company's strategy and customer demands. This step involves clearly defining the problem, the project objectives, and the deliverables.
 
 ### Problem Statement:
 
