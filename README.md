@@ -32,9 +32,3 @@ It is important for me to link every project to the core strategy of the busines
 
 By clearly defining the problem, the project objectives, and the deliverables, we ensure that the project aligns with the company's strategy and meets the needs of the customers. This clarity helps set the direction for the subsequent phases of the project.
 
-# EfficientRide Logistics: Measure Phase
-
-In this phase of the project, I'll be primarily focused on gathering and measuring the data from various sources like orders, drivers, trailers, schedules, locations, and events. This data will provide a quantitative basis for the analysis and will help in understanding the current state of the business operations.
-Using SQL and DAX to measure: Efficiency and customer satisfaction
-See the file for The Power Bi  project and the SQL Queries.
-Here are the key points:
