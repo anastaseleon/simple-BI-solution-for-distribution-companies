@@ -24,7 +24,7 @@ It is important for me to link every project to the core strategy of the busines
 
 ### Deliverables:
 
-1. **Business Intelligence Report:** A comprehensive report visualizing the company's resources, demand, sales, and other key metrics, using Power BI.
+1. [**Business Intelligence Report:**](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/main/BI) A comprehensive report visualizing the company's resources, demand, sales, and other key metrics, using Power BI.
 2. **Sales Forecasting Model:** A machine learning model to forecast future sales based on historical data.
 3. **Risk Assessment Model:** A machine learning model to identify potential risks such as delays, damages, or cancellations.
 4. **Customer Satisfaction Assessment:** A component that evaluates customer satisfaction based on data such as feedback scores, number of complaints, and number of late or rescheduled deliveries.
