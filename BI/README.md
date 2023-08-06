@@ -2,7 +2,9 @@
 
 ## Introduction
 
-EfficientRide Logistics aimed to harness the power of modern data analytics tools to extract significant operational and strategic insights. This project showcased the integration of SAS for data extraction and Power BI for comprehensive visualization, giving the company a clearer view of its operations.
+EfficientRide Logistics aims to harness the power of modern data analytics tools to extract significant operational and strategic insights. This project showcases the integration of SAS for data extraction and Power BI for comprehensive visualization, giving the company a clearer view of its operations.
+
+If you wish to reproduce this project, start by running the code to generate the EfficientRide dataset.
 
 ## Project Overview
 
@@ -13,9 +15,9 @@ EfficientRide Logistics aimed to harness the power of modern data analytics tool
 ## Approach to Solution
 
 1. **User Story Creation**: Before diving into the data, we identified the core questions and insights the company sought, crystallizing them into user stories.
-2. **Data Extraction**: We chose SAS and SQL, coupled with Power Query, as our primary data extraction tools. This step was crucial to filter out noise and bring out meaningful data for visualization.
+2. **Data Extraction**: We selected SAS and SQL, coupled with Power Query, as our primary data extraction tools. This step was crucial to filter out noise and bring forth meaningful data for visualization.
 3. **Data Modeling**: To aid in easy visualization, the extracted data was molded into a cohesive model.
-4. **Report Design**: Power BI, with its vast array of visualization tools, was used to bring the data to life, turning numbers into easily digestible charts and graphs.
+4. **Report Design**: Power BI, with its vast array of visualization tools, was utilized to bring the data to life, converting numbers into easily digestible charts and graphs.
 
 ## Detailed User Stories and Corresponding Metrics
 
@@ -34,36 +36,45 @@ User stories drive the process of dashboard creation, ensuring a targeted and us
 
 ## The Power of SAS/SQL in Data Extraction & Modeling
 
-A focused and light extraction was performed using SAS/SQL, targeting only the necessary tables and columns. This fine-tuned data acted as the base for the Power BI visualization. Here's a glimpse of the data model:
+A focused and streamlined extraction was performed using SAS/SQL, targeting only the essential tables and columns. This refined data served as the foundation for the Power BI visualization. Here's a glimpse of the data model:
+
+#### The following table can be imported directly to Power bi ,using power query, you only need to keep the following columns,
+| Locations           | Trailers Pool | Orders               | Drivers              | Schedule             | Vacations    | Event Description   |
+|---------------------|---------------|----------------------|----------------------|----------------------|--------------|---------------------|
+| Location Name       | Equipment ID  | Order ID             | Driver ID            | Date                 | Driver ID    | Event ID            |
+| Location Type       | Equipment Type| Pickup Date          | Driver Name          | Driver ID            | Start Date   | Event Description   |
+| Location Latitude   |               | Event                | License Type         | Equipment ID         | End Date     |                     |
+| Location Longitude  |               | Delivery Date        | Seniority            | Equipment Available  |              |                     |
+|                     |               | Delivery Location    | Vacation Days        | License Type         |              |                     |
+|                     |               | Status               |                      | Equipment Type       |              |                     |
+|                     |               | Trailer Requirement  |                      |                      |              |                     |
+|                     |               | Actual Pickup Date   |                      |                      |              |                     |
+|                     |               | Driver ID            |                      |                      |              |                     |
+|                     |               | Actual Delivery Date |                      |                      |              |                     |
+|                     |               | Cost                 |                      |                      |              |                     |
+|                     |               | Revenue              |                      |                      |              |                     |
+
+By utilizing the codes provided [here](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/2dcc37b1da4182d00b316f42c28c296bc7282e7c/BI/SAS%20codes), you can generate these additional tables.
 
 
-The following table can be imported directly to power bi 
-| Locations | Trailers Pool | Orders | Drivers | Schedule | Vacations | Event Description | Monthly Master scorecard (calculated using SAS or SQL) | Store Scorecard (calculated using SAS or SQL) |
-|-----------|---------------|--------|---------|----------|-----------|-------------------|------------------|----------------|
-| Location Name | Equipment ID | Order ID | Driver ID | Date | Driver ID | Event ID | Event | Delivery_Location |
-| Location Type | Equipment Type | Pickup Date | Driver Name | Driver ID | Start Date | Event Description | Frequency | Event |
-| Location Latitude |  | Event | License Type | Equipment ID | End Date | | Relative Score | Frequency |
-| Location Longitude |  | Delivery Date | Seniority | Equipment Available | | | Goal | Relative Score |
-|  |  | Delivery Location | Vacation Days | License Type | | | Importance | Goal |
-|  |  | Status |  | Equipment Type | | | | Importance |
-|  |  | Trailer Requirement |  | | | | |
-|  |  | Actual Pickup Date |  | | | | |
-|  |  | Driver ID |  | | | | |
-|  |  | Actual Delivery Date |  | | | | |
-|  |  | Cost |  | | | | |
-|  |  | Revenue |  | | | | 
 
-The SAS scripts used for the scorecards creation can be accessed [here](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/2dcc37b1da4182d00b316f42c28c296bc7282e7c/BI/SAS%20codes).
-
+| Monthly Master scorecard           | Store Scorecard                   | Driver_productivity   |
+|-----------------------------------|----------------------------------|-----------------------|
+| Event                             | Delivery_Location                | Actual_Pickup_Date    |
+| Frequency                         | Event                            | Driver_ID             |
+| Relative Score                    | Frequency                        | Number_of_Pickups     |
+| Goal                              | Relative Score                   |                       |
+| Importance                        | Goal                             |                       |
+|                                   | Importance                       |                       |
 ## Visualization with Power BI
 
-The Power BI report, rooted in the data model, offers diverse visualizations. It features breakdowns by driver type, issues distributions, service level scorecards, and much more. This variety ensures that stakeholders at different levels can glean insights tailored to their needs.
+The Power BI report, rooted in the data model, offers diverse visualizations. It features breakdowns by driver type, issues distributions, service level scorecards, and much more. This diversity ensures that stakeholders at different levels can glean insights tailored to their needs.
 
 ## Delivering Value
 
-With this dashboard, EfficientRide Logistics can now:
+With this dashboard, EfficientRide Logistics can:
 
-- Track the average daily order intake.
+Track the average daily order intake.
 - Monitor driver availability.
 - Plan for high-demand periods.
 - Evaluate daily orders per driver for effective staffing.
@@ -73,10 +84,20 @@ With this dashboard, EfficientRide Logistics can now:
 - Prioritize best and worst-served locations.
 - Investigate daily orders by license type, equipment, and delivery type.
 
+
 ## Looking Ahead
 
-This project opened up avenues for further exploration:
+This project opens up avenues for further exploration:
 
-- Diving deeper into accident causes and other pivotal events.
+- Delving deeper into the causes of accidents and other pivotal events.
 
-In essence, this integration of SAS and Power BI empowers EfficientRide Logistics to make informed decisions, optimize operations, and pave the way for future growth.
+In essence, this integration of SAS and Power BI empowers EfficientRide Logistics to make informed decisions, optimize operations, and pave the path for future growth.
+here is a summary of the steps
+1- Run the dataset to have updated data
+2- Create the 3 extra tables using this code
+3-load the data to wer bi
+4- 
+
+
+The Power BI report, rooted in the data model, offers diverse visualizations. It features breakdowns by driver type, issues distributions, service level scorecards, and much more. This variety ensures that stakeholders at different levels can glean insights tailored to their needs.
+
