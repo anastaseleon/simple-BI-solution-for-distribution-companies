@@ -1,44 +1,82 @@
-## Leveraging SAS and Power BI to Gain Insights
+# Leveraging SAS and Power BI for EfficientRide Logistics Insights
+
+## Introduction
+
+EfficientRide Logistics aimed to harness the power of modern data analytics tools to extract significant operational and strategic insights. This project showcased the integration of SAS for data extraction and Power BI for comprehensive visualization, giving the company a clearer view of its operations.
+
+## Project Overview
+
+![Project Snapshot](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/BI/png/snapshot.png?raw=true)
+
+*An illustrative snapshot of the final dashboard used to represent data and insights.*
+
+## Approach to Solution
+
+1. **User Story Creation**: Before diving into the data, we identified the core questions and insights the company sought, crystallizing them into user stories.
+2. **Data Extraction**: We chose SAS and SQL, coupled with Power Query, as our primary data extraction tools. This step was crucial to filter out noise and bring out meaningful data for visualization.
+3. **Data Modeling**: To aid in easy visualization, the extracted data was molded into a cohesive model.
+4. **Report Design**: Power BI, with its vast array of visualization tools, was used to bring the data to life, turning numbers into easily digestible charts and graphs.
+
+## Detailed User Stories and Corresponding Metrics
+
+User stories drive the process of dashboard creation, ensuring a targeted and user-centered design. These stories represent the needs and questions of both operational and strategic management levels.
+
+| Management Level | User Story | Associated Metrics & Visuals |
+|------------------|------------|-----------------------------|
+| Operational      | I need to gauge the average daily order intake for resource allocation. | Daily average of orders, breakdown by driver type and equipment. |
+| Operational      | How many drivers are available daily for scheduling? | Current available drivers, segmented by license type, seniority, and upcoming week availability. |
+| Operational      | I want to ascertain the average number of unscheduled drivers daily. | Daily average of orders per driver for the month. |
+| Operational      | How often are orders rescheduled? | Monthly distribution of categorized issues with a scorecard for service levels. |
+| Operational      | Which orders face delays in delivery? | Distribution of issues from the previous month. |
+| Strategic        | What are our peak order times? | Monthly distribution of average orders. |
+| Strategic        | Which drivers or equipment types are most associated with delivery delays? | A slicer tool to filter insights by individual drivers. |
+| Strategic        | Which regions or customers experience the most rescheduled orders? | Lists detailing the best and worst served locations. |
+
+## The Power of SAS/SQL in Data Extraction & Modeling
+
+A focused and light extraction was performed using SAS/SQL, targeting only the necessary tables and columns. This fine-tuned data acted as the base for the Power BI visualization. Here's a glimpse of the data model:
 
 
-![project snapshot](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/BI/png/snapshot.png?raw=true)
+The following table can be imported directly to power bi 
+| Locations | Trailers Pool | Orders | Drivers | Schedule | Vacations | Event Description | Monthly Master scorecard (calculated using SAS or SQL) | Store Scorecard (calculated using SAS or SQL) |
+|-----------|---------------|--------|---------|----------|-----------|-------------------|------------------|----------------|
+| Location Name | Equipment ID | Order ID | Driver ID | Date | Driver ID | Event ID | Event | Delivery_Location |
+| Location Type | Equipment Type | Pickup Date | Driver Name | Driver ID | Start Date | Event Description | Frequency | Event |
+| Location Latitude |  | Event | License Type | Equipment ID | End Date | | Relative Score | Frequency |
+| Location Longitude |  | Delivery Date | Seniority | Equipment Available | | | Goal | Relative Score |
+|  |  | Delivery Location | Vacation Days | License Type | | | Importance | Goal |
+|  |  | Status |  | Equipment Type | | | | Importance |
+|  |  | Trailer Requirement |  | | | | |
+|  |  | Actual Pickup Date |  | | | | |
+|  |  | Driver ID |  | | | | |
+|  |  | Actual Delivery Date |  | | | | |
+|  |  | Cost |  | | | | |
+|  |  | Revenue |  | | | | 
 
-Through calculated metrics, we aim to provide valuable insights into the operations of EfficientRide Logistics.
+The SAS scripts used for the scorecards creation can be accessed [here](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/2dcc37b1da4182d00b316f42c28c296bc7282e7c/BI/SAS%20codes).
 
-## Logistics Dashboard
-By employing User Stories, we ensure that our dashboard has a clear purpose right from the start, eliminating unnecessary steps. Each user story targets a specific need, driving the focus towards the most relevant and impactful data visualizations.
+## Visualization with Power BI
 
-| Management Level | User Story | Measures & Visuals |
-|------------------|------------|--------------------|
-| Operational      | User Story 1: As a logistics manager, I want to know the average number of orders received each day so that I can manage resources effectively. | **Measures: Daily Average number of orders received.    Visuals: Breakdown of orders per type of driver, breakdown of orders per equipment required.** |
-|                  | User Story 2: As a logistics manager, I want to know how many drivers are available each day so that I can schedule deliveries efficiently. | **Measures: Current number of available drivers.    Visuals: Available drivers per license type, available drivers per seniority, available drivers for the next week.** |
-|                  | User Story 3: As a logistics manager, I want to know the average number of unassigned drivers each day so that I can identify staffing needs. | **Measures: Daily Average of orders per driver for the current month.** |
-|                  | User Story 4: As a logistics manager, I want to know how many orders are rescheduled so that I can improve customer satisfaction. | **Visuals: Distribution of issues category for the current month. Using a scorecard to evaluate service level.** |
-|                  | User Story 5: As a logistics manager, I want to know how many orders are delivered late so that I can improve delivery processes. | **Visuals: Distribution of issues category for the last month.** |
-| Strategic        | User Story 6: As a logistics director, I want to identify peak periods for orders so that I can plan for high-demand times. | **Visuals: Distribution of average orders per month.** |
-|                  | User Story 7: As a logistics director, I want to identify drivers or equipment types associated with late deliveries so that I can address performance issues. | **Slicer to filter by driver.** |
-|                  | User Story 8: As a logistics director, I want to identify regions or customers with a high incidence of rescheduled orders so that I can improve customer service. | **List of top best-served and worst-served locations.** |
+The Power BI report, rooted in the data model, offers diverse visualizations. It features breakdowns by driver type, issues distributions, service level scorecards, and much more. This variety ensures that stakeholders at different levels can glean insights tailored to their needs.
 
-## Use SAS or SQL  To  Only Extract the Data We Need for the Report
+## Delivering Value
 
-We will use SAS to extract only the tables and columns we need to avoid having a too-heavy report. We will also create a scorecard to evaluate the service level for User Story 4. To get the service level data, we can create a scorecard in SAS. If you are working with a small dataset, you can just create the scorecard in SAS. 
+With this dashboard, EfficientRide Logistics can now:
 
-Here is a list of tables we will need from the dataset:
+- Track the average daily order intake.
+- Monitor driver availability.
+- Plan for high-demand periods.
+- Evaluate daily orders per driver for effective staffing.
+- Assess the time since the last accident for safety measures.
+- Analyze monthly issues distributions.
+- Determine service levels.
+- Prioritize best and worst-served locations.
+- Investigate daily orders by license type, equipment, and delivery type.
 
-| Locations | Trailers Pool | Orders | Drivers | Schedule | Vacations | Event Description |
-|-----------|---------------|--------|---------|----------|-----------|-------------------|
-| Location Name | Equipment ID | Order ID | Driver ID | Date | Driver ID | Event ID |
-| Location Type | Equipment Type | Pickup Date | Driver Name | Driver ID | Start Date | Event Description |
-| Location Latitude |  | Event | License Type | Equipment ID | End Date |  |
-| Location Longitude |  | Delivery Date | Seniority | Equipment Available |  |  |
-|  |  | Delivery Location | Vacation Days | License Type |  |  |
-|  |  | Status |  | Equipment Type |  |  |
-|  |  | Trailer Requirement |  |  |  |  |
-|  |  | Actual Pickup Date |  |  |  |  |
-|  |  | Driver ID |  |  |  |  |
-|  |  | Actual Delivery Date |  |  |  |  |
-|  |  | Cost |  |  |  |  |
-|  |  | Revenue |  |  |  |  |
+## Looking Ahead
 
-[See the SAS Files used to create the scorecards](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/2dcc37b1da4182d00b316f42c28c296bc7282e7c/BI/SAS%20codes)
+This project opened up avenues for further exploration:
 
+- Diving deeper into accident causes and other pivotal events.
+
+In essence, this integration of SAS and Power BI empowers EfficientRide Logistics to make informed decisions, optimize operations, and pave the way for future growth.
