@@ -73,9 +73,12 @@ The Power BI report, rooted in the data model, offers diverse visualizations. It
 ## Delivering Value
 
 With this dashboard, EfficientRide Logistics can:
+Track the average daily order intake;
 
-Track the average daily order intake.
-- Monitor driver availability.
+The use of the drill-through option allows us to get more in-depth insights about the orders and help  manage resources 
+
+![Drill trhough](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/BI/png/Drill%20through1%20orders.gif?raw=true)
+With the logistics dashboard the managers can do the following:
 - Plan for high-demand periods.
 - Evaluate daily orders per driver for effective staffing.
 - Assess the time since the last accident for safety measures.
@@ -83,21 +86,29 @@ Track the average daily order intake.
 - Determine service levels.
 - Prioritize best and worst-served locations.
 - Investigate daily orders by license type, equipment, and delivery type.
+![dashboard](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/BI/png/Logistics.png?raw=true)
+
+- Monitor driver availability. with another drill-through for more insights
+  ![Driver drill through](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/BI/png/Drill%20trough%20drivers.gif?raw=true)
 
 
-## Looking Ahead
 
-This project opens up avenues for further exploration:
+### Summary of Steps to Reproduce the EfficientRide Logistics Insights:
 
-- Delving deeper into the causes of accidents and other pivotal events.
+1. **Run the Dataset**: [Dataset](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/main/Dataset)
+   
+2. **Generate Additional Tables**:  [SAS/SQL codes](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/2dcc37b1da4182d00b316f42c28c296bc7282e7c/BI/SAS%20codes) 
+   
+3. **Load Data into Power BI**: [Power BI template](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/BI/Logistics%20Report%20pbit.pbit)
+   
+4. **Design the Dashboard**: Utilize the Power BI suite of visualization tools to design the dashboard. This will be based on the data model created earlier, taking into account the user stories and associated metrics.
+   
+5. **Review and Refine**: Periodically check and ensure the accuracy and relevance of the visualizations, refining them as per the evolving needs of the company.
+   
+6. **Deploy**: Once satisfied with the dashboard, deploy it for stakeholders to start accessing the insights.
 
-In essence, this integration of SAS and Power BI empowers EfficientRide Logistics to make informed decisions, optimize operations, and pave the path for future growth.
-here is a summary of the steps
-1- Run the dataset to have updated data
-2- Create the 3 extra tables using this code
-3-load the data to wer bi
-4- 
+7. **Feedback Loop**: Regularly gather feedback from users of the dashboard to further enhance and tailor the visualizations to their needs.
 
 
-The Power BI report, rooted in the data model, offers diverse visualizations. It features breakdowns by driver type, issues distributions, service level scorecards, and much more. This variety ensures that stakeholders at different levels can glean insights tailored to their needs.
 
+The Power BI report, rooted in the data model, offers diverse visualizations. It features breakdowns by driver type, issue distributions, service level scorecards, and much more. This variety ensures that stakeholders at different levels can glean insights tailored to their needs.
