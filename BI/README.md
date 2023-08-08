@@ -111,4 +111,7 @@ With the logistics dashboard the managers can do the following:
 
 
 
-The Power BI report, rooted in the data model, offers diverse visualizations. It features breakdowns by driver type, issue distributions, service level scorecards, and much more. This variety ensures that stakeholders at different levels can glean insights tailored to their needs.
+### Next steps
+In the next project, we will use machine learning to investigate the reason behind these issues:
+
+![issues](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/main/BI/png/event.png?raw=true)
