@@ -1,7 +1,9 @@
 # Business Intelligence and Machine Learning for a Small Transport Company
 
 ## The Dataset
-The dataset used in this project originates from EfficientRide Logistics, a hypothetical regional transportation service provider specializing in a diverse array of delivery needs in and around a bustling port city. The company operates within a strategic network encompassing customer distribution centers, retail stores, and carrier warehouses, thus establishing a robust logistics framework. The dataset contains comprehensive information about the company's orders, drivers, trailers, schedules, locations, and various events that affect orders. This data provides a detailed perspective of EfficientRide's logistics operations, enabling in-depth analysis and potential optimization of their operations.
+The dataset used in this project originates from EfficientRide Logistics, a hypothetical regional transportation service provider specializing in a diverse array of delivery needs in and around a bustling port city. Use the following code to generate your custom dataset or use the opne of the  following dataset.
+
+The company operates within a strategic network encompassing customer distribution centers, retail stores, and carrier warehouses, thus establishing a robust logistics framework. The dataset contains comprehensive information about the company's orders, drivers, trailers, schedules, locations, and various events that affect orders. This data provides a detailed perspective of EfficientRide's logistics operations, enabling in-depth analysis and potential optimization of their operations.
 
 [Description of the company](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/blob/a7bc34710d6630b4935095d5c83fa9274d6a000a/Description%20of%20the%20dataset%20.md)
 
@@ -23,7 +25,7 @@ It is important for me to link every project to the core strategy of the busines
 - **Data-Driven Decision Making:** Leveraging data insights to inform strategic business decisions.
 
 ### Deliverables:
-
+The following deliverable should adress the strategic needs cited previously
 1. [**Business Intelligence Report:**](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/main/BI) A comprehensive report visualizing the company's resources, demand, sales, and other key metrics, using Power BI.
 2. **Sales Forecasting Model:** A machine learning model to forecast future sales based on historical data.
 3. **Risk Assessment Model:** A machine learning model to identify potential risks such as delays, damages, or cancellations.
