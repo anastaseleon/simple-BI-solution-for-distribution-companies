@@ -54,7 +54,7 @@ A focused and streamlined extraction was performed using SAS/SQL, targeting only
 |                     |               | Cost                 |                      |                      |              |                     |
 |                     |               | Revenue              |                      |                      |              |                     |
 
-By utilizing the codes provided [here](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/2dcc37b1da4182d00b316f42c28c296bc7282e7c/BI/SAS%20codes), you can generate these additional tables.
+By utilizing the codes provided [here](https://github.com/anastaseleon/simple-BI-solution-for-distribution-companies/tree/main/BI/SAS%20codes), you can generate these additional tables.
 
 
 
