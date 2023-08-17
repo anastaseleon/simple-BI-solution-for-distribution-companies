@@ -38,7 +38,7 @@ User stories drive the process of dashboard creation, ensuring a targeted and us
 
 A focused and streamlined extraction was performed using SAS/SQL, targeting only the essential tables and columns. This refined data served as the foundation for the Power BI visualization. Here's a glimpse of the data model:
 
-#### The following table can be imported directly to Power bi ,using power query, you only need to keep the following columns,
+#### The following table can be imported directly to Power bi , using power query, you only need to keep the following columns,
 | Locations           | Trailers Pool | Orders               | Drivers              | Schedule             | Vacations    | Event Description   |
 |---------------------|---------------|----------------------|----------------------|----------------------|--------------|---------------------|
 | Location Name       | Equipment ID  | Order ID             | Driver ID            | Date                 | Driver ID    | Event ID            |
